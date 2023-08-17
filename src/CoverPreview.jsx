@@ -1,6 +1,4 @@
 
-const date = Date
-
 function CoverPreview ({
     firstName,
     lastName,
