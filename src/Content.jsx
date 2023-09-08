@@ -3,6 +3,7 @@ import PersonalInfo from "./PersonalInfo";
 import CompanyInfo from "./CompanyInfo";
 import CoverPreview from "./CoverPreview"
 import FieldInfo from "./FieldInfo";
+import ExampleButton from "./ExampleButton";
 
 export default function Content() {
     const [firstName, setFirstName] = useState(null);
@@ -28,6 +29,19 @@ export default function Content() {
     const updateCommitment = (event) => setCommitment(event.target.value)
     const updateInterest = (event) => setInterest(event.target.value)
     const updateDepartment = (event) => setDepartment(event.target.value)
+    const genExample = () => {
+        setFirstName('Joe');
+        setLastName('Test');
+        setEmail('joetest@mail.com');
+        setPhoneNumber('234-567-8901');
+        setCompanyName('Generic Company');
+        setHiringManager('Hiring Manager');
+        setPositionTitle('Employee');
+        setPassion('problem solving');
+        setCommitment('helping others');
+        setInterest('learning');
+        setDepartment('Employment');
+    }
 
     return (
         <div className="content">
@@ -49,6 +63,7 @@ export default function Content() {
                     updateInterest={updateInterest}
                     updateDepartment={updateDepartment}
                 />
+                <ExampleButton genExample={genExample}/>
             </div>
             <div className="area">
                 <CoverPreview
