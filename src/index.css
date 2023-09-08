@@ -28,7 +28,7 @@ h1 {
   line-height: 1.1;
 }
 
-input:invalid {
+input {
   outline: none;
   border: none;
 }
