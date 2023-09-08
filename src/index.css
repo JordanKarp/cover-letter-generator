@@ -28,6 +28,10 @@ h1 {
   line-height: 1.1;
 }
 
+input:invalid {
+  outline: none;
+}
+
 button {
   margin: 1rem;
   padding: 1rem;
