@@ -11,10 +11,10 @@ function FieldInfo ({
         <>
             <h3>Field Info</h3>
             <div className="info">
-                <input type='text' placeholder="Field" onChange={updateField} />
-                <input type='text' placeholder="Commitment" onChange={updateCommitment} />
-                <input type='text' placeholder="Interest" onChange={updateInterest} />
-                <input type='text' placeholder="Department" onChange={updateDepartment} />
+                <input type='text' name="field" placeholder="Field" onChange={updateField} />
+                <input type='text' name="commitment" placeholder="Commitment" onChange={updateCommitment} />
+                <input type='text' name="interest" placeholder="Interest" onChange={updateInterest} />
+                <input type='text' name="department" placeholder="Department" onChange={updateDepartment} />
             </div>
         </>
     )

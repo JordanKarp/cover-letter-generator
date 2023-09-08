@@ -10,10 +10,10 @@ function PersonalInfo ({
         <>
             <h3>Personal Info</h3>
             <div className="info">
-                <input type='text' placeholder="First Name" onChange={updateFirstName} />
-                <input type='text' placeholder="Last Name" onChange={updateLastName} />
-                <input type='text' placeholder="Email" onChange={updateEmail} />
-                <input type='text' placeholder="Phone Number" onChange={updatePhoneNumber} />
+                <input type='text' name="firstName" placeholder="First Name" onChange={updateFirstName} />
+                <input type='text' name="lastName" placeholder="Last Name" onChange={updateLastName} />
+                <input type='text' name="email" placeholder="Email" onChange={updateEmail} />
+                <input type='text' name="phoneNumber" placeholder="Phone Number" onChange={updatePhoneNumber} />
             </div>
         </>
     )
