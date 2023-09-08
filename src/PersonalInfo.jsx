@@ -12,7 +12,7 @@ function PersonalInfo ({
             <div className="info">
                 <input type='text' name="firstName" placeholder="First Name" onChange={updateFirstName} />
                 <input type='text' name="lastName" placeholder="Last Name" onChange={updateLastName} />
-                <input type='text' name="email" placeholder="Email" onChange={updateEmail} />
+                <input type='text' name="email" placeholder="Email" onChange={updateEmail} autoComplete="false"/>
                 <input type='text' name="phoneNumber" placeholder="Phone Number" onChange={updatePhoneNumber} />
             </div>
         </>
