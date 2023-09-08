@@ -2,6 +2,7 @@ import { useState } from "react"
 import PersonalInfo from "./PersonalInfo";
 import CompanyInfo from "./CompanyInfo";
 import CoverPreview from "./CoverPreview"
+import FieldInfo from "./FieldInfo";
 
 export default function Content() {
     const [firstName, setFirstName] = useState(null);
@@ -11,6 +12,10 @@ export default function Content() {
     const [companyName, setCompanyName] = useState(null);
     const [hiringManager, setHiringManager] = useState(null);
     const [positionTitle, setPositionTitle] = useState(null);
+    const [field, setField] = useState(null);
+    const [commitment, setCommitment] = useState(null);
+    const [interest, setInterest] = useState(null);
+    const [department, setDepartment] = useState(null);
 
     const updateFirstName = (event) => setFirstName(event.target.value)
     const updateLastName = (event) => setLastName(event.target.value)
@@ -18,8 +23,11 @@ export default function Content() {
     const updatePhoneNumber = (event) => setPhoneNumber(event.target.value)
     const updateCompanyName = (event) => setCompanyName(event.target.value)
     const updateHiringManager = (event) => setHiringManager(event.target.value)
-    const updatePositionTitle = (event) => setPositionTitle(event.target.value)
-
+    const updateField = (event) => setField(event.target.value)
+    const updateCommitment = (event) => setCommitment(event.target.value)
+    const updateInterest = (event) => setInterest(event.target.value)
+    const updateDepartment = (event) => setDepartment(event.target.value)
+    
     return (
         <div className="content">
             <div className="area">
@@ -34,6 +42,12 @@ export default function Content() {
                     updateHiringManager={updateHiringManager}
                     updatePositionTitle={updatePositionTitle}
                 />
+                <FieldInfo
+                    updateField={updateField}
+                    updateCommitment={updateCommitment}
+                    updateInterest={updateInterest}
+                    updateDepartment={updateDepartment}
+                />
             </div>
             <div className="area">
                 <CoverPreview
@@ -44,6 +58,10 @@ export default function Content() {
                     companyName={companyName}
                     hiringManager={hiringManager}
                     positionTitle={positionTitle}
+                    field={field}
+                    commitment={commitment}
+                    interest={interest}
+                    department={department}
                 />
             </div>
         </div>
