@@ -7,6 +7,10 @@ function CoverPreview ({
     companyName,
     hiringManager,
     positionTitle,
+    field,
+    commitment,
+    interest,
+    department
 }) {
 
     return (

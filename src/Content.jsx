@@ -23,6 +23,7 @@ export default function Content() {
     const updatePhoneNumber = (event) => setPhoneNumber(event.target.value)
     const updateCompanyName = (event) => setCompanyName(event.target.value)
     const updateHiringManager = (event) => setHiringManager(event.target.value)
+    const updatePositionTitle = (event) => setPositionTitle(event.target.value)
     const updateField = (event) => setField(event.target.value)
     const updateCommitment = (event) => setCommitment(event.target.value)
     const updateInterest = (event) => setInterest(event.target.value)
