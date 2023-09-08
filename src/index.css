@@ -31,7 +31,8 @@ h1 {
 
 input {
   border: 1px solid black;
-  outline: black
+  outline: black;
+  margin: 0.2rem 0;
 }
 
 button {
