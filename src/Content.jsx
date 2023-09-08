@@ -12,7 +12,7 @@ export default function Content() {
     const [companyName, setCompanyName] = useState(null);
     const [hiringManager, setHiringManager] = useState(null);
     const [positionTitle, setPositionTitle] = useState(null);
-    const [field, setField] = useState(null);
+    const [passion, setPassion] = useState(null);
     const [commitment, setCommitment] = useState(null);
     const [interest, setInterest] = useState(null);
     const [department, setDepartment] = useState(null);
@@ -24,11 +24,11 @@ export default function Content() {
     const updateCompanyName = (event) => setCompanyName(event.target.value)
     const updateHiringManager = (event) => setHiringManager(event.target.value)
     const updatePositionTitle = (event) => setPositionTitle(event.target.value)
-    const updateField = (event) => setField(event.target.value)
+    const updatePassion = (event) => setPassion(event.target.value)
     const updateCommitment = (event) => setCommitment(event.target.value)
     const updateInterest = (event) => setInterest(event.target.value)
     const updateDepartment = (event) => setDepartment(event.target.value)
-    
+
     return (
         <div className="content">
             <div className="area">
@@ -44,7 +44,7 @@ export default function Content() {
                     updatePositionTitle={updatePositionTitle}
                 />
                 <FieldInfo
-                    updateField={updateField}
+                    updatePassion={updatePassion}
                     updateCommitment={updateCommitment}
                     updateInterest={updateInterest}
                     updateDepartment={updateDepartment}
@@ -59,7 +59,7 @@ export default function Content() {
                     companyName={companyName}
                     hiringManager={hiringManager}
                     positionTitle={positionTitle}
-                    field={field}
+                    passion={passion}
                     commitment={commitment}
                     interest={interest}
                     department={department}

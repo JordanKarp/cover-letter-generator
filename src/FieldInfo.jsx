@@ -2,7 +2,7 @@
 
 
 function FieldInfo ({
-    updateField,
+    updatePassion,
     updateCommitment,
     updateInterest,
     updateDepartment,
@@ -11,7 +11,7 @@ function FieldInfo ({
         <>
             <h3>Field Info</h3>
             <div className="info">
-                <input type='text' name="field" placeholder="Field" onChange={updateField} />
+                <input type='text' name="passion" placeholder="Passion" onChange={updatePassion} />
                 <input type='text' name="commitment" placeholder="Commitment" onChange={updateCommitment} />
                 <input type='text' name="interest" placeholder="Interest" onChange={updateInterest} />
                 <input type='text' name="department" placeholder="Department" onChange={updateDepartment} />
